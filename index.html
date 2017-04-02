@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CreaByBego</title>
+    <link rel="icon" href="images/creabybego_icon.ico"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   </head>
 <body>
@@ -14,13 +16,13 @@
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
+          <a href="index.html" class="pull-left">
             <div id="logo-img"></div>
           </a>
 
-          <div class="navbar-brand">
+         <!--  <div class="navbar-brand">
             <a href="index.html"><h1>CreaByBego</h1></a>
-          </div>
+          </div> -->
 
           <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -29,11 +31,141 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-        
+  
+
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
+            </li>
+            <li id="navAboutButton">
+              <a href="#" onclick="$cbb.loadAboutPage();">
+                <span class="glyphicon glyphicon-apple"></span><br class="hidden-xs"> About</a>
+            </li>            
+            <li glyphicon glyphicon-phone-altid="phone">
+              <a href="tel:0033650599113">
+                <span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs"> Call me !</a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+
   
       </div><!-- .container -->
     </nav><!-- #header-nav -->
   </header>
+
+
+
+
+  <div id="main-content" class="container"></div>
+
+
+  <!-- Footer -->
+  <footer class="panel-footer">
+   <div class="container">
+     <div class="footer-social-links-inner">
+      <ul class="social-links">                    
+
+
+        <!-- Social media: etsy github behance sketchfab instagram facebook shapeways i.materialise linkedin -->
+        <!-- Etsy -->
+        <li>
+          <section id="etsy">
+           <a target="_blank" href="https://www.etsy.com/shop/CreaByBego" onclick="">
+            <span class="fa fa-etsy fa-2x"></span></a>
+            <hr class="visible-xs">
+          </section>
+        </li>
+
+        <!-- Sketchfab -->
+        <li>
+          <section id="sketchfab">
+           <a target="_blank" href="https://sketchfab.com/begogna" onclick="">
+            <img src="images/sketchfab-icon-circle-2x.png"></a>
+            <hr class="visible-xs">
+          </section>
+        </li>
+
+        <!-- Shapeways -->
+        <li>
+          <section id="shapeways">
+           <a target="_blank" href="https://www.shapeways.com/designer/begogna/hire-me" onclick="">
+            <img src="images/shapeways-icon-2x.png"></a>
+            <hr class="visible-xs">
+          </section>
+        </li>
+
+        <!-- i.materialise -->
+        <li>
+          <section id="imaterialise">
+           <a target="_blank" href="https://i.materialise.com/shop/designer/begogna" onclick="">
+            <img src="images/imaterialise-icon-2x.png"></a>
+            <hr class="visible-xs">
+          </section>
+        </li>
+
+        <!-- Facebook -->
+        <li>
+          <section id="facebook">
+           <a target="_blank" href="https://www.facebook.com/creabybego" onclick="">
+            <span class="fa fa-facebook fa-2x">
+            </span></a>
+            <hr class="visible-xs">
+          </section></li>
+        </li>
+
+        <!-- Instagram -->
+        <li>
+          <section id="instagram">
+           <a target="_blank" href="https://www.instagram.com/begognap" onclick="">
+            <span class="fa fa-instagram fa-2x"></span></a>
+            <hr class="visible-xs">
+          </section>
+        </li>
+
+        <!-- Behance -->
+        <li>
+          <section id="behance">
+           <a target="_blank" href="https://www.behance.net/begogna" onclick="">
+            <span class="fa fa-behance fa-2x"></span></a>
+            <hr class="visible-xs">
+          </section>
+        </li>
+
+        <!-- Linkedin -->
+        <li>
+          <section id="linkedin">
+           <a target="_blank" href="https://www.linkedin.com/in/begonaperez/" onclick="">
+            <span class="fa fa-linkedin fa-2x"></span></a>
+            <hr class="visible-xs">
+          </section>
+        </li>
+
+        <!-- Github -->
+        <li>
+          <section id="github">
+           <a target="_blank" href="https://github.com/begogna" onclick="">
+            <span class="fa fa-github fa-2x"></span></a>
+            <hr class="visible-xs">
+          </section>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div id="copyright" class="text-center">
+    <i class="fa fa-copyright align-center" aria-hidden="true"></i> 2017 CreaByBego
+  </div> 
+</footer>
+
+<!-- End Footer -->
+
+
+
+
 
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
