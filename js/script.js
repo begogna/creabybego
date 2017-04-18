@@ -162,13 +162,13 @@ function buildCategoriesViewHtml(categories,
     // Insert category values
     var html = categoryHtml;
     var name = "" + categories[i].name;
-    var short_name = categories[i].short_name;
+    var description = categories[i].description;
     html =
       insertProperty(html, "name", name);
     html =
       insertProperty(html,
-                     "short_name",
-                     short_name);
+                     "description",
+                     description);
     finalHtml += html;
   }
 

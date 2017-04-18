@@ -1,4 +1,12 @@
 /** GENERAL **/
+/* For alingment debug purposes */
+/*
+* {
+    border: 1px solid black;
+}
+*/
+
+
 h1 {
   color: white;
   text-align: center;
@@ -36,6 +44,9 @@ button {
   height: 150px;
   background-size: 150px;
   margin: 10px 15px 10px 10px;
+}
+#logo-img:hover {
+  opacity: .7;
 }
 
 /*
@@ -89,11 +100,9 @@ button {
 /* CATEGORIES PAGE */
 .category-tile { 
   position: relative;
-/*  border: 2px solid #3F0C1F;
-*/  overflow: hidden;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 15px;
+  overflow: hidden;
+  margin-top: 15px; /* the same as the padding of the cols, to be visually the same horizontally and vertically */
+  margin-bottom: 15px; 
 }
 .category-tile span {
   position: absolute;
@@ -102,22 +111,28 @@ button {
   width: 100%;
   text-align: center;
   font-size: 1.2em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   background-color: #000;
   color: #fff;
   opacity: .8;
 }
 .category-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
+  opacity: .8;
 }
 
-#menu-categories-title + div {
+/*#menu-categories-title + div {
   margin-bottom: 50px;
-}
+}*/
 /* END CATEGORIES PAGE */
 
 
   /* Footer */
+
+.panel-footer a:hover{
+ color: #337ab7; /* The color mustn't change to avoid differences with the icons coming from images */
+ opacity: .7;
+}
 .panel-footer section {
   margin-bottom: 30px;
   text-align: center;
