@@ -1,6 +1,5 @@
 # CreaByBego
-## I am developing this web site for two main reasons:
-* Learn and practice about UI and web development
+## This is my personal web site. The technologies I use are:
   * HTML5, CSS3
   * Javascript
   * AJAX
